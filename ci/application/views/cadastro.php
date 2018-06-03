@@ -11,7 +11,7 @@
     <title>Agency - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -58,7 +58,7 @@
       </div>
     </nav>
 
-   <form class="form-horizontal">
+  <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
@@ -82,68 +82,30 @@
   </div>
 </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Telefone">tel</label>  
-  <div class="col-md-4">
-  <input id="Telefone" name="Telefone" type="text" placeholder="(xx)xxxxx-xxxx" class="form-control input-md" required="">
-    
-  </div>
-</div>
 
-<!-- Multiple Checkboxes (inline) -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Ciclo">ciclo</label>
-  <div class="col-md-4">
-    <label class="checkbox-inline" for="Ciclo-0">
-      <input type="checkbox" name="Ciclo" id="Ciclo-0" value="1">
-      1
-    </label>
-    <label class="checkbox-inline" for="Ciclo-1">
-      <input type="checkbox" name="Ciclo" id="Ciclo-1" value="2">
-      2
-    </label>
-    <label class="checkbox-inline" for="Ciclo-2">
-      <input type="checkbox" name="Ciclo" id="Ciclo-2" value="3">
-      3
-    </label>
-    <label class="checkbox-inline" for="Ciclo-3">
-      <input type="checkbox" name="Ciclo" id="Ciclo-3" value="4">
-      4
-    </label>
-    <label class="checkbox-inline" for="Ciclo-4">
-      <input type="checkbox" name="Ciclo" id="Ciclo-4" value="5">
-      5
-    </label>
-    <label class="checkbox-inline" for="Ciclo-5">
-      <input type="checkbox" name="Ciclo" id="Ciclo-5" value="6">
-      6
-    </label>
-  </div>
-</div>
 
 <!-- Multiple Radios (inline) -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="Modalidade">modalidades</label>
   <div class="col-md-4"> 
     <label class="radio-inline" for="Modalidade-0">
-      <input type="radio" name="Modalidade" id="Modalidade-0" value="futfem" checked="checked">
+      <input type="checkbox" name="Modalidade" id="Modalidade-0" value="futfem" checked="checked">
       Futsal Fem
     </label> 
     <label class="radio-inline" for="Modalidade-1">
-      <input type="radio" name="Modalidade" id="Modalidade-1" value="futmasc">
+      <input type="checkbox" name="Modalidade" id="Modalidade-1" value="futmasc">
       Futsal Masc
     </label> 
     <label class="radio-inline" for="Modalidade-2">
-      <input type="radio" name="Modalidade" id="Modalidade-2" value="handfem">
+      <input type="checkbox" name="Modalidade" id="Modalidade-2" value="handfem">
       Handebol Fem
     </label> 
     <label class="radio-inline" for="Modalidade-3">
-      <input type="radio" name="Modalidade" id="Modalidade-3" value="handmasc">
+      <input type="checkbox" name="Modalidade" id="Modalidade-3" value="handmasc">
       Handebol Masc
     </label> 
     <label class="radio-inline" for="Modalidade-4">
-      <input type="radio" name="Modalidade" id="Modalidade-4" value="basket">
+      <input type="checkbox" name="Modalidade" id="Modalidade-4" value="basket">
       Basket Masc
     </label>
   </div>
@@ -163,8 +125,11 @@
   </div>
 </div>
 
+ <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
+ 
 </fieldset>
 </form>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

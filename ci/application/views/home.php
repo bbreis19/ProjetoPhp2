@@ -441,7 +441,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" action="/ci/index.php/Home/btnCadastro" metohod="post">Cadastre-se</button>
+                  <a href="/ci/index.php/cadastrar/">Cadastre-se</a>
                   <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
                 </div>
               </div>
