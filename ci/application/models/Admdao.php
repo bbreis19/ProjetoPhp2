@@ -1,42 +1,22 @@
 <?php
-    require_once APPPATH."models/usuario.php";
-  
-  class AdmModel extends Usuario{
+ 
+  class Admdao extends CI_Model{
       
-      public function __construct($id, $nome, $email, $senha){
-          parent:: __construct($id, $nome, $email, $senha);
-          
+      public function getUser($email, $senha){
+          $this->db->where('email',$email);
+          $this->db->where('senha',$senha);
+          $adm->$this->db->get('adm');
+          require_once APPPATH."models/adm.php";
+          if($adm->num_rows()>0){
+              $administrador = $adm ->result()[0];
+              $id = $administrador ->id;
+              $nome = $administrador ->nome;
+              $emailUser = $administrador ->email;
+              $senhaUser = $administrador ->senha;
+              return new AdmModel($id,$nome,$emailUser,$senhaUser);
+          }else{
+              return null;
+          }
       }
-      
-      public function toArray(){
-          $aux = array();
-          $aux["nome"] = $this->getNome();
-          $aux["email"] = $this->getEmail();
-          $aux["senha"] = $this->getSenha();
-          return aux;
-      }
-      
-      public function getClassName(){
-          return "adm";
-      }
-      
-      public function auth(){
-		$email = $this->input->post("email");
-		$senha = $this->input->post("senha");
-		require_once APPPATH."models/adm.php";
-		$this->load->model('admdao');
-		$admindao = $this->admdao;
-		$admin = $admindao->getUser($email,$senha);
-		if(isset($admin)){
-			$this->session->set_userdata("adm",$admin->getNome());
-			redirect('adm/dashboard/','refresh');			
-		}else{
-		redirect('/home/','refresh');
-        }
-	}
   }
-  
-  
- 
- 
 ?>
