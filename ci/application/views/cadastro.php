@@ -82,11 +82,32 @@
   </div>
 </div>
 
+<!-- Email input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordinput">E-mail</label>
+  <div class="col-md-4">
+    <input id="passwordinput" name="passwordinput" type="email" placeholder="exemple@exemple.com" class="form-control input-md" required="true">
+    
+  </div>
+</div>
+
+<!--sexo checkbox-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Modalidade">Sexo</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="Modalidade-0">
+      <input type="radio" name="Modalidade" id="Modalidade-0" value="futfem" checked="checked">
+      Feminino
+    </label> 
+    <label class="radio-inline" for="Modalidade-1">
+      <input type="radio" name="Modalidade" id="Modalidade-1" value="futmasc">
+      Masculino
+    </label> 
 
 
 <!-- Multiple Radios (inline) -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Modalidade">modalidades</label>
+  <label class="col-md-10 control-label" for="Modalidade">modalidades</label>
   <div class="col-md-4"> 
     <label class="radio-inline" for="Modalidade-0">
       <input type="checkbox" name="Modalidade" id="Modalidade-0" value="futfem" checked="checked">
