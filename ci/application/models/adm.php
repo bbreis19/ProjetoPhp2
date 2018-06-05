@@ -19,24 +19,6 @@
       public function getClassName(){
           return "adm";
       }
-      
-      public function auth(){
-		$email = $this->input->post("email");
-		$senha = $this->input->post("senha");
-		require_once APPPATH."models/adm.php";
-		$this->load->model('admdao');
-		$admindao = $this->admdao;
-		$admin = $admindao->getUser($email,$senha);
-		if(isset($admin)){
-			$this->session->set_userdata("adm",$admin->getNome());
-			redirect('adm/dashboard/','refresh');			
-		}else{
-		redirect('/home/','refresh');
-        }
-	}
+
   }
-  
-  
- 
- 
 ?>

@@ -442,6 +442,7 @@
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
                   <a href="/ci/index.php/cadastrar/">Cadastre-se</a>
+                  <a href="/ci/index.php/loginAdm/">Entrar como ADMIN</a>
                   <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
                 </div>
               </div>
