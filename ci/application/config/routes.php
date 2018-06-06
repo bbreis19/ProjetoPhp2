@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'home/form';
 $route['cadastrar'] = 'home/cadastrar';
+$route['cadastrado'] = 'home/dashusuario';
 $route['usuario/cadastro'] = 'cadastro/cadastrar';
 $route['loginAdm'] = 'home/loginAdm';
 $route['404_override'] = '';

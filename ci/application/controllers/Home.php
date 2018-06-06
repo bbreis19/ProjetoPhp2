@@ -14,11 +14,16 @@ class Home extends CI_Controller {
 		$this->load->view('loginAdm');
 	}
 	
+	public function dashusuario(){
+		$this->load->view('dashusuario');
+	}
 	public function form(){
 		$data = array();
 		$data["msg"] = $this->session->userdata("msg");
 		$this->load->view("home",$data);
 		$this->session->unset_userdata("msg");
 	}
+	
+	
 
 }

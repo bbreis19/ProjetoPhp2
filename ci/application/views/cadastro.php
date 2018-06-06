@@ -58,7 +58,7 @@
       </div>
     </nav>
 
-  <form class="form-horizontal" action="/ci/index.php/usuario/cadastro/" method="post">
+  <form class="form-horizontal" action="/ci/index.php/cadastrado/" method="post">
 <fieldset>
 
 <!-- Form Name -->
