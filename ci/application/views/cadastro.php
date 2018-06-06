@@ -58,7 +58,7 @@
       </div>
     </nav>
 
-  <form class="form-horizontal">
+  <form class="form-horizontal" action="/ci/index.php/usuario/cadastro/" method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -68,7 +68,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Nome: </label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="textinput" name="nome" type="text" placeholder="" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -77,7 +77,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="passwordinput">Senha</label>
   <div class="col-md-4">
-    <input id="passwordinput" name="passwordinput" type="password" placeholder="*****" class="form-control input-md" required="">
+    <input id="passwordinput" name="senha" type="password" placeholder="*****" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -86,24 +86,24 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="passwordinput">E-mail</label>
   <div class="col-md-4">
-    <input id="passwordinput" name="passwordinput" type="email" placeholder="exemple@exemple.com" class="form-control input-md" required="true">
+    <input id="passwordinput" name="email" type="email" placeholder="exemple@exemple.com" class="form-control input-md" required="true">
     
   </div>
 </div>
 
 <!--sexo checkbox-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Modalidade">Sexo</label>
+  <label class="col-md-4 control-label" for="sexo">Sexo</label>
   <div class="col-md-4"> 
-    <label class="radio-inline" for="Modalidade-0">
-      <input type="radio" name="Modalidade" id="Modalidade-0" value="futfem" checked="checked">
+    <label class="radio-inline" for="feminino">
+      <input type="radio" name="sexo" id="sexo_feminino" value="feminino" checked="checked">
       Feminino
     </label> 
-    <label class="radio-inline" for="Modalidade-1">
-      <input type="radio" name="Modalidade" id="Modalidade-1" value="futmasc">
+    <label class="radio-inline" for="masculino">
+      <input type="radio" name="sexo" id="sexo_masculino" value="masculino">
       Masculino
     </label> 
-
+</div
 
 <!-- Multiple Radios (inline) -->
 <div class="form-group">
@@ -114,19 +114,19 @@
       Futsal Fem
     </label> 
     <label class="radio-inline" for="Modalidade-1">
-      <input type="checkbox" name="Modalidade" id="Modalidade-1" value="futmasc">
+      <input type="checkbox" name="futsal feminino" id="Modalidade-1" value="futmasc">
       Futsal Masc
     </label> 
     <label class="radio-inline" for="Modalidade-2">
-      <input type="checkbox" name="Modalidade" id="Modalidade-2" value="handfem">
+      <input type="checkbox" name="handebol feminino" id="Modalidade-2" value="handfem">
       Handebol Fem
     </label> 
     <label class="radio-inline" for="Modalidade-3">
-      <input type="checkbox" name="Modalidade" id="Modalidade-3" value="handmasc">
+      <input type="checkbox" name="handebol masculino" id="Modalidade-3" value="handmasc">
       Handebol Masc
     </label> 
     <label class="radio-inline" for="Modalidade-4">
-      <input type="checkbox" name="Modalidade" id="Modalidade-4" value="basket">
+      <input type="checkbox" name="basquete masculino" value="basket">
       Basket Masc
     </label>
   </div>
@@ -136,7 +136,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Curso">curso</label>
   <div class="col-md-4">
-    <select id="Curso" name="Curso" class="form-control">
+    <select id="Curso" name="curso" class="form-control">
       <option value="ge">GE</option>
       <option value="gp">GP</option>
       <option value="log">LOG</option>
@@ -146,7 +146,7 @@
   </div>
 </div>
 
- <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
+ <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" value="Cadastrar">Entrar</button>
  
 </fieldset>
 </form>
