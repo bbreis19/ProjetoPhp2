@@ -9,7 +9,6 @@ require_once APPPATH."models/formulario.php";
            
             $this->sexo = $sexo;
             $this->curso = $curso;
-            // $this->modalidades = $modalidades;
         }
          
         public function toArray(){
@@ -17,7 +16,6 @@ require_once APPPATH."models/formulario.php";
             $aux["nome"] = $this->getNome();
             $aux["curso"] = $this->curso;
             $aux["sexo"] = $this->sexo;
-            // $aux["modalidades"] = $this->modalidades;
             $aux["email"] = $this->getEmail();
             $aux["senha"] = $this->getSenha();
             return $aux;

@@ -3,10 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Modalidade extends CI_Controller {
 
-	public function index(){
-		echo 'foda-se';
-		exit;
-	}
 
 	public function inscricao($modalidade, $usuario){
 		
