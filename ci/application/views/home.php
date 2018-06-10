@@ -29,34 +29,34 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
+    <!--<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">-->
+    <!--  <div class="container">-->
         <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>-->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Modalidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Imagens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Premios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!--    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--      Menu-->
+    <!--      <i class="fa fa-bars"></i>-->
+    <!--    </button>-->
+    <!--    <div class="collapse navbar-collapse" id="navbarResponsive">-->
+    <!--      <ul class="navbar-nav text-uppercase ml-auto">-->
+    <!--        <li class="nav-item">-->
+    <!--          <a class="nav-link js-scroll-trigger" href="#services">Modalidades</a>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <!--          <a class="nav-link js-scroll-trigger" href="#portfolio">Imagens</a>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <!--          <a class="nav-link js-scroll-trigger" href="#about">Premios</a>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <!--          <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>-->
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <!--          <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>-->
+    <!--        </li>-->
+    <!--      </ul>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</nav>-->
 
     <!-- Header -->
     <header class="masthead">
@@ -419,15 +419,15 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="/ci/index.php/cadastro/auth" method="post"> 
               <div class="row">
                 <div class="col-md-5">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Login *" required="required" data-validation-required-message="Please enter your name.">
+                    <input class="form-control" name="email" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Por favor digite seu email">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Senha *" required="required" data-validation-required-message="Please enter your email address.">
+                    <input class="form-control" id="senha" name="senha" type="password" placeholder="Senha *" required="required" data-validation-required-message="Please enter your email address.">
                     <p class="help-block text-danger"></p>
                   </div>
                 <!--  <div class="form-group">-->
@@ -446,7 +446,7 @@
                   <div id="success"></div>
                   <a href="/ci/index.php/cadastrar/">Cadastre-se</a>
                   <a href="/ci/index.php/loginAdm/">Entrar como ADMIN</a>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
+                  <button id="sendMessageButton" value="Login" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
                 </div>
               </div>
             </form>

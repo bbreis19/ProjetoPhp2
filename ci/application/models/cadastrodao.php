@@ -1,9 +1,7 @@
 <?php
-    class CadastroDAO extends CI_Model{
+    class Cadastrodao extends CI_Model{
         
         public function getUser($email,$senha){
-            //SELECT * FROM Usuario WHERE
-            //email = $email AND senha = $senha 
             $this->db->where('email',$email);
 		    $this->db->where('senha',$senha);
 		    $user = $this->db->get('usuario');
@@ -15,7 +13,6 @@
 		        $nome = $usuario->nome;
 		        $curso = $usuario->curso;
 		        $sexo = $usuario->sexo;
-		        $modalidades = $usuario->modalidades;
 		        $email = $usuario->email;
 		        $senha = $usuario->senha;
 		        return new CadastroModel($id,$nome,$curso,$sexo, $modalidades ,$email,$senha);

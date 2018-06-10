@@ -4,6 +4,10 @@ require_once APPPATH."models/usuario.php";
 require_once APPPATH."models/cadastro.php";
 class Cadastro extends CI_Controller {
 
+	public function index()
+	{
+		$this->load->view('dashusuario');
+	}
 	public function sair(){
 		$this->session->unset_userdata("cadastro");
 		redirect('home/form','refresh');
@@ -32,16 +36,25 @@ class Cadastro extends CI_Controller {
 		$email = $this->input->post("email");
 		$senha = $this->input->post("senha");
 		require_once APPPATH."models/cadastro.php";
-		$this->load->model('cadastrodao');
+		$this->load->model('Cadastrodao');
 		$userdao = $this->usuariodao;
-		$usuario = $userdao->getUser($email,$senha);
-		if(isset($usuario)){
-			$this->session->set_userdata("usuario",$usuario->getNome());
-			redirect('feed/dashboard/','refresh');			
+		$usua = $userdao->getUser($email,$senha);
+		if(isset($usua)){
+			$this->session->set_userdata("usuario",$usua->getNome());
+			redirect('cadastro/dashboardUser','refresh');			
 		}else{
 		redirect('/home/form','refresh');
         }
     }
+    
+    public function dashboardUser(){
+		if($this->session->userdata("usuario")){
+			$data["nome"] = $this->session->userdata("usuario");
+			$this->load->view("usuario",$data);
+		}else{
+			redirect('dashadm','refresh');
+		}
+	}
     
 	// public function excluir(){
 	// 	$senha = $this->input->post("senha");
@@ -55,18 +68,18 @@ class Cadastro extends CI_Controller {
  //       }
 	// }
 	
-	// public function atualizar(){
-	// 	$senha = $this->input->post("senha");
-	// 	$email = $this->input->post("email");
-	// 	require_once APPPATH."models/aluno.php";
-	// 	$this->load->model('alunodao');
-	// 	$aludao = $this->alunodao;
-	// 	$aluno = $aludao->alterarSenha($email,$senha);
-	// 	if(isset($aluno)){
-	// 		$this->session->unset_userdata("aluno");
-	// 		$this->db->update('senha');
+	public function atualizar(){
+		$senha = $this->input->post("senha");
+		$email = $this->input->post("email");
+		require_once APPPATH."models/cadastro.php";
+		$this->load->model('cadastrodao');
+		$userdao = $this->userdao;
+		$usuario = $userdao->alterarSenha($email,$senha);
+		if(isset($usuario)){
+			$this->session->unset_userdata("usuario");
+			$this->db->update('senha');
 			
 			
- //       }
-	// }
+        }
+	}
 }

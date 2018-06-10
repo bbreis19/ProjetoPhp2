@@ -17,6 +17,10 @@ class Home extends CI_Controller {
 	public function dashusuario(){
 		$this->load->view('dashusuario');
 	}
+	
+	public function alterarsenha(){
+		$this->load->view('alterarsenha');
+	}
 	public function form(){
 		$data = array();
 		$data["msg"] = $this->session->userdata("msg");
