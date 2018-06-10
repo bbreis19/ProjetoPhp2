@@ -36,7 +36,7 @@ class Cadastro extends CI_Controller {
 		$email = $this->input->post("email");
 		$senha = $this->input->post("senha");
 		require_once APPPATH."models/cadastro.php";
-		$this->load->model('Cadastrodao');
+		$this->load->model('cadastrodao');
 		$userdao = $this->usuariodao;
 		$usua = $userdao->getUser($email,$senha);
 		if(isset($usua)){
@@ -56,17 +56,17 @@ class Cadastro extends CI_Controller {
 		}
 	}
     
-	// public function excluir(){
-	// 	$senha = $this->input->post("senha");
-	// 	require_once APPPATH."models/aluno.php";
-	// 	$this->load->model('alunodao');
-	// 	$aludao = $this->alunodao;
-	// 	$aluno = $aludao->getSenha($senha);
-	// 	if(isset($aluno)){
-	// 		$this->session->unset_userdata("aluno");
-	// 		$this->db->row_delete($senha);
- //       }
-	// }
+	public function excluir(){
+		$senha = $this->input->post("senha");
+		require_once APPPATH."models/cadastro.php";
+		$this->load->model('cadastrodao');
+		$userdao = $this->usuariodao;
+		$usuario = $userdao->getSenha($senha);
+		if(isset($usuario)){
+			$this->session->unset_userdata("usuario");
+			$this->db->row_delete($senha);
+        }
+	}
 	
 	public function atualizar(){
 		$senha = $this->input->post("senha");

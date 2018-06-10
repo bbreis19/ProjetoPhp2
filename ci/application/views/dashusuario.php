@@ -48,10 +48,10 @@
               <a class="nav-link js-scroll-trigger" href="#about">Premios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
+              <a class="nav-link js-scroll-trigger" href="/ci/index.php/alterarsenha">Alterar Senha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/ci/index.php/alterarsenha">Alterar Senha</a>
+              <a class="nav-link js-scroll-trigger" href="/ci/index.php/excluirconta">Excluir Conta</a>
             </li>
           </ul>
         </div>

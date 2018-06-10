@@ -21,6 +21,10 @@ class Home extends CI_Controller {
 	public function alterarsenha(){
 		$this->load->view('alterarsenha');
 	}
+	
+	public function excluirconta(){
+		$this->load->view('excluirconta');
+	}
 	public function form(){
 		$data = array();
 		$data["msg"] = $this->session->userdata("msg");
