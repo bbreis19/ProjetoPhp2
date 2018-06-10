@@ -53,6 +53,7 @@ $route['default_controller'] = 'home/form';
 $route['cadastrar'] = 'home/cadastrar';
 $route['cadastrado'] = 'home/dashusuario';
 $route['usuario/cadastro'] = 'cadastro/cadastrar';
+$route['modalidade/inscricao/(:num)/(:num)'] = 'modalidade/inscricao/$1/$2';
 $route['loginAdm'] = 'home/loginAdm';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

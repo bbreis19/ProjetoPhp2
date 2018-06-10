@@ -20,13 +20,21 @@ class Cadastro extends CI_Controller {
 		$sexo = $this->input->post("sexo");
 		$email = $this->input->post("email");
 		$senha = $this->input->post("senha");
-		require_once APPPATH."models/cadastro.php";
-		$user = new CadastroModel(0,$nome,$curso,$sexo,$email,$senha);
-		//NAO HA CONSTRUTOR NOS DAO'S
-		$this->load->model('insertdao');
-		$insdao = $this->insertdao;
-		$insdao->insert($user);
+		
+		//garcia comédia
+		// require_once APPPATH."models/cadastro.php";
+		// $user = new CadastroModel(0,$nome,$curso,$sexo,$email,$senha);
+		
+		//lucas ci
+		$this->load->model('UsuarioModel');
+		$id_usuario = $this->UsuarioModel->inserir($this->input->post());
+		
+		// //NAO HA CONSTRUTOR NOS DAO'S
+		// $this->load->model('insertdao');
+		// $insdao = $this->insertdao;
+		// $insdao->insert($user);
 		$this->session->set_userdata("msg","Usuário Cadastrado");
+		$this->session->set_userdata("usuario", $this->UsuarioModel->first($email));
 		redirect('home/form','refresh');
         
     }
@@ -36,11 +44,18 @@ class Cadastro extends CI_Controller {
 		$email = $this->input->post("email");
 		$senha = $this->input->post("senha");
 		require_once APPPATH."models/cadastro.php";
-		$this->load->model('cadastrodao');
-		$userdao = $this->usuariodao;
-		$usua = $userdao->getUser($email,$senha);
+		
+		//garcia complicado
+		// $this->load->model('Cadastrodao');
+		// // $userdao = $this->usuariodao;
+		// $usua = $this->Cadastrodao->getUser($email,$senha);
+		
+		//lucas mais simples
+		$this->load->model('UsuarioModel');
+		$usua = $this->UsuarioModel->autentica($email, $senha);
+		
 		if(isset($usua)){
-			$this->session->set_userdata("usuario",$usua->getNome());
+			$this->session->set_userdata("usuario",$usua);
 			redirect('cadastro/dashboardUser','refresh');			
 		}else{
 		redirect('/home/form','refresh');
@@ -50,7 +65,7 @@ class Cadastro extends CI_Controller {
     public function dashboardUser(){
 		if($this->session->userdata("usuario")){
 			$data["nome"] = $this->session->userdata("usuario");
-			$this->load->view("usuario",$data);
+			$this->load->view("dashusuario",$data);
 		}else{
 			redirect('dashadm','refresh');
 		}
@@ -81,5 +96,11 @@ class Cadastro extends CI_Controller {
 			
 			
         }
+	}
+	
+	public function logoff(){
+		$this->session->unset_userdata('usuario');
+		$this->session->sess_destroy();
+		redirect('home');
 	}
 }

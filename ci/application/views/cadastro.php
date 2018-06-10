@@ -58,7 +58,7 @@
       </div>
     </nav>
 
-  <form class="form-horizontal" action="/ci/index.php/cadastrado/" method="post">
+  <form class="form-horizontal" action="/ci/index.php/usuario/cadastro/" method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -106,6 +106,7 @@
 </div
 
 <!-- Multiple Radios (inline) -->
+<!--
 <div class="form-group">
   <label class="col-md-10 control-label" for="Modalidade">modalidades</label>
   <div class="col-md-4"> 
@@ -131,7 +132,7 @@
     </label>
   </div>
 </div>
-
+-->
 <!-- Select Basic -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="Curso">curso</label>

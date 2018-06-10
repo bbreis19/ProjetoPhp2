@@ -68,9 +68,6 @@
         </div>
       </div>
     </header>
-    <div>
-       <p> <?php echo $msg;?></p>
-    </div>
 
     <!-- Services -->
     <section id="services">

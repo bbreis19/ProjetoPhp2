@@ -27,7 +27,6 @@
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -53,6 +52,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/ci/index.php/excluirconta">Excluir Conta</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/ci/index.php/cadastro/logoff">Logoff</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -67,39 +69,39 @@
         </div>
       </div>
     </header>
-    
+    <?php $usuario = $this->session->userdata('usuario'); ?>
     <div class="col-md-4 cards">
       <h1>Futsal Feminino </h1>
     
-      <a href="">Inscrever-se</a>
+      <a href="<?php echo base_url(); ?>modalidade/inscricao/1/<?php echo $usuario->id; ?>">Inscrever-se</a>
       <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
     </div>
     
     <div class="col-md-4 cards">
       <h1>Futsal Masculino </h1>
       
-        <a href="">Inscrever-se</a>
+        <a href="<?php echo base_url(); ?>modalidade/inscricao/2/<?php echo $usuario->id; ?>">Inscrever-se</a>
         <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
     </div>
     
     <div class="col-md-4 cards">
       <h1>Handball Feminino </h1>
       
-        <a href="">Inscrever-se</a>
+        <a href="<?php echo base_url(); ?>modalidade/inscricao/3/<?php echo $usuario->id; ?>">Inscrever-se</a>
         <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
     </div>
     
     <div class="col-md-4 cards">
       <h1>Handball Masculino </h1>
       
-        <a href="">Inscrever-se</a>
+        <a href="<?php echo base_url(); ?>modalidade/inscricao/4/<?php echo $usuario->id; ?>">Inscrever-se</a>
         <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
     </div>
     
     <div class="col-md-4 cards">
       <h1>Basket </h1>
       
-        <a href="">Inscrever-se</a>
+        <a href="<?php echo base_url(); ?>modalidade/inscricao/5/<?php echo $usuario->id; ?>">Inscrever-se</a>
         <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
     </div>
     <!-- Bootstrap core JavaScript -->
