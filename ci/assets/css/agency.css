@@ -20,6 +20,12 @@
   left: 37%;
   margin-top: 16%;
 }
+table,td,th,tr{
+  border: solid;
+  padding: 2px;
+  font-size: 32px;
+  text-align: center;
+}
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
