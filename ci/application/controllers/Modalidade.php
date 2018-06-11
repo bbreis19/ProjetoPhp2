@@ -9,6 +9,6 @@ class Modalidade extends CI_Controller {
 		$this->load->model('ModalidadeModel');
 		$this->ModalidadeModel->inscrever($modalidade, $usuario);
 		
-		redirect('/home/form','refresh');
+		redirect('cadastro/dashboardUser','refresh');
 	}
 }
