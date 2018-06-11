@@ -41,7 +41,7 @@ class Cadastro extends CI_Controller {
 
 		$this->load->model('UsuarioModel');
 		$usua = $this->UsuarioModel->autentica($email, $senha);
-		
+	
 		if(isset($usua)){
 			$this->session->set_userdata("usuario",$usua);
 			redirect('cadastro/dashboardUser','refresh');			
@@ -63,7 +63,7 @@ class Cadastro extends CI_Controller {
 		$senha = $this->input->post("senha");
 		require_once APPPATH."models/cadastro.php";
 		$this->load->model('cadastrodao');
-		$userdao = $this->usuariodao;
+		$userdao = $this->cadastrodao;
 		$usuario = $userdao->getSenha($senha);
 		if(isset($usuario)){
 			$this->session->unset_userdata("usuario");
@@ -71,20 +71,20 @@ class Cadastro extends CI_Controller {
         }
 	}
 	
-	// public function atualizar(){
-	// 	$senha = $this->input->post("senha");
-	// 	$email = $this->input->post("email");
-	// 	require_once APPPATH."models/cadastro.php";
-	// 	$this->load->model('cadastrodao');
-	// 	$userdao = $this->userdao;
-	// 	$usuario = $userdao->alterarSenha($email,$senha);
-	// 	if(isset($usuario)){
-	// 		$this->session->unset_userdata("usuario");
-	// 		$this->db->update('senha');
+	public function atualizar(){
+		$senha = $this->input->post("senha");
+		$email = $this->input->post("email");
+		require_once APPPATH."models/cadastro.php";
+		$this->load->model('cadastrodao');
+		$userdao = $this->cadastrodao;
+		$usua = $userdao->alterarSenha($email,$senha);
+		if(isset($usua)){
+			$this->session->unset_userdata("usuario");
+			$this->db->update('senha');
+			redirect('cadastro/dashboardUser','refresh');
 			
-			
- //       }
-	// }
+        }
+	}
 	
 	public function logoff(){
 		$this->session->unset_userdata('usuario');

@@ -38,15 +38,6 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Modalidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Imagens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Premios</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/ci/index.php/alterarsenha">Alterar Senha</a>
             </li>
             <li class="nav-item">

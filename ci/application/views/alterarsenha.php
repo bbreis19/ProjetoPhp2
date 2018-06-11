@@ -58,7 +58,7 @@
       </div>
     </nav>
 
-  <form class="form-horizontal" action="/ci/index.php/cadastro/atualizar" method="post">
+  <form class="form-horizontal" action="/ci/index.php/atualizar" method="post">
 
 <!-- Form Name -->
 <legend>Confirme se email e altere sua senha</legend>

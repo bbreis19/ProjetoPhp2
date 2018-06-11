@@ -58,7 +58,7 @@
       </div>
     </nav>
 
-  <form class="form-horizontal" action="/ci/index.php/cadastro/excluir" method="post">
+  <form class="form-horizontal" action="/ci/index.php/excluir" method="post">
 
 <!-- Form Name -->
 <legend>Confirme seu email e senha para excluir sua conta</legend>

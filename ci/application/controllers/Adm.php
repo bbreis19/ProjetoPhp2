@@ -25,12 +25,22 @@ class Adm extends CI_Controller {
 		$this->load->model('admdao');
 		$admindao = $this->admdao;
 		$admin = $admindao->getUser($email,$senha);
+		$inscricoes = $admindao->getInscricoes();
 		if(isset($admin)){
 			$this->session->set_userdata("adm",$admin->getNome());
-			redirect('adm/dashboard/','refresh');			
+			$this->session->set_userdata("inscricoes",x'$inscricoes);
+			redirect('adm/dashboard/', $inscricoes);			
 		}else{
 		redirect('/home/form','refresh');
         }
 	}
+	
+	
+    /*foreach ($inscricoes as $inscricao) {
+      <tr>
+        <td>$inscricao['nome']</td>
+        <td>$inscricao['curso']</td>
+        <td>$inscricao['modalidade']</td>
+      </tr>*/
 
 }

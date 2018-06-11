@@ -19,5 +19,20 @@
             return null;
         }
       }
+      
+       public function getInscricoes(){
+    	return $this->db->query("
+        	SELECT
+        		u.nome,
+        		u.curso,
+        		m.descricao
+        	FROM
+        		inscricao AS i
+        	INNER JOIN
+        		usuario AS u ON u.id = i.id_aluno
+        	INNER JOIN
+        		modalidade AS m on m.id = i.id_modalidade;
+        ");
+      }
   }
 ?>

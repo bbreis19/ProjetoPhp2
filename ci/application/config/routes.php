@@ -55,5 +55,10 @@ $route['cadastrado'] = 'home/dashusuario';
 $route['usuario/cadastro'] = 'cadastro/cadastrar';
 $route['modalidade/inscricao/(:num)/(:num)'] = 'modalidade/inscricao/$1/$2';
 $route['loginAdm'] = 'home/loginAdm';
+$route['alterarsenha'] = 'home/alterarsenha';
+$route['atualizar'] = 'cadastro/atualizar';
+$route['excluirconta'] = 'home/excluirconta';
+$route['excluir'] = 'cadastro/excluir';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

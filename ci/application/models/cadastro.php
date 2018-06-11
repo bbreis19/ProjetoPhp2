@@ -1,7 +1,7 @@
 <?php
 require_once APPPATH."models/usuario.php";
 require_once APPPATH."models/formulario.php";
-    class cadastroModel extends Usuario implements formulario{
+    class Cadastrom extends Usuario implements formulario{
         private $curso, $sexo;
         
         public function __construct($id, $nome, $curso, $sexo, $email, $senha){
