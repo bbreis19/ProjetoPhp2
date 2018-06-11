@@ -8,6 +8,11 @@
   line-height: 0;
 }
 
+.cards{
+  float: left;
+  padding: 25px;
+  text-align: justify;
+}
 
 
 body {
@@ -41,7 +46,9 @@ h6 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white;
 }
-
+h1{
+  color: black;
+}
 section {
   padding: 100px 0;
 }
@@ -129,6 +136,7 @@ img::-moz-selection {
   color: #F70097;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
+
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: black;
