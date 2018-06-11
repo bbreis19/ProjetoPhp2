@@ -21,7 +21,7 @@
       }
       
        public function getInscricoes(){
-    	return $this->db->query("
+    	$x = $this->db->query("
         	SELECT
         		u.nome,
         		u.curso,
@@ -33,6 +33,7 @@
         	INNER JOIN
         		modalidade AS m on m.id = i.id_modalidade;
         ");
+        return $x->result();
       }
   }
 ?>

@@ -12,6 +12,10 @@ class Adm extends CI_Controller {
 	public function dashboard(){
 		if($this->session->userdata("adm")){
 			$data["nome"] = $this->session->userdata("adm");
+			$this->load->model('admdao');
+
+			$data['inscricoes'] = $this->admdao->getInscricoes();
+				
 			$this->load->view("adm",$data);
 		}else{
 			redirect('dashadm','refresh');
@@ -28,11 +32,10 @@ class Adm extends CI_Controller {
 		$inscricoes = $admindao->getInscricoes();
 		if(isset($admin)){
 			$this->session->set_userdata("adm",$admin->getNome());
-			$this->session->set_userdata("inscricoes",x'$inscricoes);
-			redirect('adm/dashboard/', $inscricoes);			
+			redirect('adm/dashboard/', 'refresh');			
 		}else{
-		redirect('/home/form','refresh');
-        }
+			redirect('/home/form','refresh');
+    }
 	}
 	
 	

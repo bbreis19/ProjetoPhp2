@@ -69,29 +69,28 @@
     </header>
     
     
-    
-    <div class="conteudo">
-      <table>
-        <thead>
-          <th>Nome:</th>
-          <th>Curso:</th>
-          <th>Modalidade:</th>
-        </thead>
-        <tbody id="tcorpo">
-          <?php 
-            require_once APPPATH."controllers/Adm.php";
-            foreach ($inscricoes as $inscricao) { ?>
-            <tr>
-              <td><?php $inscricao['nome'] ?></td>
-              <td><?php $inscricao['curso'] ?></td>
-              <td><?php $inscricao['modalidade'] ?></td>
-            </tr> 
-            <?php }  ?>
-        </tbody>
-      </table>
+    <div class="container">
+        <h1>Inscrições</h1>
+        <table>
+          <tr>
+            <th>Nome</th>
+            <th>Modalidade</th>
+            <th>Curso</th>
+          </tr>
+          
+            <?php foreach  ($inscricoes as $inscricao) : ?>
+          <tr>
+            <td><?php echo $inscricao->nome ?></td>
+            <td><?php echo $inscricao->descricao  ?></td>
+            <td><?php echo $inscricao->curso  ?></td>
+          </tr>
+          <?php endforeach ?>
+        </table>
+      
     </div>
 
-
+   
+   
 
 
     <!-- Bootstrap core JavaScript -->

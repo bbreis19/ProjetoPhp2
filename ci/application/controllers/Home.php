@@ -25,6 +25,13 @@ class Home extends CI_Controller {
 	public function excluirconta(){
 		$this->load->view('excluirconta');
 	}
+	public function buscaInscricoes(){
+		$this->load->model('InscricoesModel');
+		$lista = $this->InscricoesModel->buscaInscricoes();
+		$dados = array("inscricoes" => $lista);
+		$this->load->view('adm', $dados);
+	}
+	
 	public function form(){
 		$data = array();
 		$data["msg"] = $this->session->userdata("msg");
