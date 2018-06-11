@@ -111,7 +111,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: white;
 }
 
 #mainNav .navbar-toggler {
@@ -121,17 +121,17 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: white;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #F70097;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: black;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -139,12 +139,12 @@ img::-moz-selection {
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: black;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #F70097;
 }
 
 @media (min-width: 992px) {
@@ -155,7 +155,7 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: white;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
