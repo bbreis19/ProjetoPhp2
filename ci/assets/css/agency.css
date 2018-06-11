@@ -12,9 +12,14 @@
   float: left;
   padding: 25px;
   text-align: justify;
+  border: groove;
 }
 
-
+.formularios{
+  border: groove;
+  left: 37%;
+  margin-top: 16%;
+}
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;

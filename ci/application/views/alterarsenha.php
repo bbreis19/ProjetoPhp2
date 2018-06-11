@@ -21,44 +21,20 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/agency.min.css" rel="stylesheet">
+    <link href="assets/css/agency.css" rel="stylesheet">
     
 
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>-->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Modalidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Imagens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Premios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-  <form class="form-horizontal" action="/ci/index.php/atualizar" method="post">
+  <form class="form-horizontal col-md-6 formularios " action="/ci/index.php/atualizar" method="post" style="
+    border: groove;
+    margin-top: 20%;
+    margin-left: 25%;
+">
+    
 
 <!-- Form Name -->
 <legend>Confirme se email e altere sua senha</legend>
@@ -67,7 +43,7 @@
 <!-- Email input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="passwordinput">E-mail</label>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <input id="passwordinput" name="email" type="email" placeholder="exemple@exemple.com" class="form-control input-md" required="true">
   </div>
 </div>
@@ -75,7 +51,7 @@
 <!-- Password input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="passwordinput">Nova senha</label>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <input id="passwordinput" name="senha" type="password" placeholder="*****" class="form-control input-md" required="">
     
   </div>
