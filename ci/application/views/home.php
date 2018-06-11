@@ -11,7 +11,7 @@
     <title>Atlética Fatec Santos</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?= base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="<?= base_url(); ?>vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +21,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="<?= base_url(); ?>assets/css/agency.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/css/agency.css" rel="stylesheet">
     
 
   </head>
@@ -67,8 +67,10 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <a href="/ci/index.php/cadastrar/">Cadastre-se</a>
-                  <a href="/ci/index.php/loginAdm/">Entrar como ADMIN</a>
+                  <div class="links">
+                    <a href="/ci/index.php/cadastrar/">Cadastre-se</a> <p class="divisoria"> |||| </p>
+                    <a href="/ci/index.php/loginAdm/">Entrar como ADMIN</a>
+                  </div>
                   <button id="sendMessageButton" value="Login" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
                 </div>
               </div>
