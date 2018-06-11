@@ -34,6 +34,9 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Atletica Fatec Baixada Santista</div>
+          <div class="intro-heading text-uppercase">Seja BEM-VINDO</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Contato</a>
+        </div>
       </div>
     </header>
 
