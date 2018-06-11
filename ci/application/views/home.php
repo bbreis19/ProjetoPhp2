@@ -48,7 +48,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contato</h2>
-            <h3 class="section-subheading text-muted">Faça seu Login ou Cadastre-se</h3>
+
           </div>
         </div>
         <div class="row">

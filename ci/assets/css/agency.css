@@ -20,11 +20,11 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #F70097;
 }
 
 a:hover {
-  color: #fec503;
+  color: #000;
 }
 
 .text-primary {
@@ -39,6 +39,7 @@ h5,
 h6 {
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 section {
@@ -77,13 +78,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #F70097;
+  border-color: #1C1C1C;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #1C1C1C !important;
+  border-color: #1C1C1C !important;
   color: white;
 }
 
@@ -179,7 +180,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/bg-1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -612,6 +613,8 @@ section#contact {
 
 section#contact .section-heading {
   color: #fff;
+  float: left;
+  
 }
 
 section#contact .form-group {
@@ -698,7 +701,7 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: #F70097;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
