@@ -65,36 +65,35 @@
       <h1>Futsal Feminino </h1>
     
       <a href="<?php echo base_url(); ?>modalidade/inscricao/1/<?php echo $usuario->id; ?>">Inscrever-se</a>
-      <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
+      <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Miranda como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
     </div>
     
     <div class="col-md-4 cards">
       <h1>Futsal Masculino </h1>
       
         <a href="<?php echo base_url(); ?>modalidade/inscricao/2/<?php echo $usuario->id; ?>">Inscrever-se</a>
-        <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
+        <p>A equipe de futsal Masculino da Fatec Santos garante bom desempenho em todos os campeonatos que participa, mantendo sempre entre as três primeiras colocações. Diego Christo, o técnico, além de trabalhar a parte técnica com a equipe também ajuda com o preparo psicológico.</p>
     </div>
     
     <div class="col-md-4 cards">
-      <h1>Handball Feminino </h1>
+      <h1>Handbol Feminino </h1>
       
         <a href="<?php echo base_url(); ?>modalidade/inscricao/3/<?php echo $usuario->id; ?>">Inscrever-se</a>
-        <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
+        <p>Composto pelo mesmo time da equipe de Futsal Feminino, o time de handbol feminino vem forte esse ano com promessa de ouro no InterFatec. Após a medalha de prata no InterFatec 2016, o time foi desestruturado e remasterizado, visando maior aproveitamento das atletas.</p>
     </div>
     
     <div class="col-md-4 cards">
-      <h1>Handball Masculino </h1>
+      <h1>Handbol Masculino </h1>
       
         <a href="<?php echo base_url(); ?>modalidade/inscricao/4/<?php echo $usuario->id; ?>">Inscrever-se</a>
-        <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
+        <p>A equipe de Handbol Masculino é a atual campeã da modalidade no Interfatec, e com promessa de serem bi neste ano. Com grandes jogadores como Pirikito, Matheus Ruiz e Rodrigo Alvares, o time vem treinando e aperfeiçoando suas tecnicas para não perder a posição no campeonato.</p>
     </div>
     
     <div class="col-md-4 cards">
-      <h1>Basket </h1>
+      <h1>Basquete </h1>
       
         <a href="<?php echo base_url(); ?>modalidade/inscricao/5/<?php echo $usuario->id; ?>">Inscrever-se</a>
-        <p>A equipe de futsal feminino é a atual campeã do campeonato SportSpan. Composta por 14 atletas do sexo feminino, sendo 12 fatecanas e 2 agregadas. Com Matheus Mirando como treinador do time, a equipe está de volta aos treinos para voltar com tudo no segundo semestre em busca de novos titulos. Os treinos acontecem todas as Quintas as 19h.</p>
-    </div>
+        <p>A equipe de Basquete é uma das mais fortes de toda a atletica. Após a perda da final do InterFatec 2016 por dois pontos contra a Fatec São Paulo, o time ficou desistimulado e grandes atletas sairam da equipe. Neste ano, estão com tudo nos treinos procurando novos talentos para brilhar no time.    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
