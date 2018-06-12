@@ -29,6 +29,7 @@ table,td,th,tr{
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: pink;
 }
 
 p {
