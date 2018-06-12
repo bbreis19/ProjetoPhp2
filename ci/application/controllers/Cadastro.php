@@ -30,10 +30,8 @@ class Cadastro extends CI_Controller {
 		$email = $this->input->post("email");
 		$senha = $this->input->post("senha");
 		require_once APPPATH."models/cadastro.php";
-
 		$this->load->model('UsuarioModel');
 		$usua = $this->UsuarioModel->autentica($email, $senha);
-	
 		if(isset($usua)){
 			$this->session->set_userdata("usuario",$usua);
 			redirect('cadastro/dashboardUser','refresh');			
