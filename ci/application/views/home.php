@@ -69,7 +69,7 @@
                   <div id="success"></div>
                   <div class="links">
                     <a href="/ci/index.php/cadastrar/">Cadastre-se</a> <p class="divisoria"> |||| </p>
-                    <a href="/ci/index.php/loginAdm/">Entrar como ADMIN</a>
+                    <a href="/ci/index.php/loginAdm/">Entrar como Administrador</a>
                   </div>
                   <button id="sendMessageButton" value="Login" class="btn btn-primary btn-xl text-uppercase" type="submit">Entrar</button>
                 </div>
