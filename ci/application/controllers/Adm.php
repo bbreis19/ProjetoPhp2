@@ -37,13 +37,5 @@ class Adm extends CI_Controller {
 			redirect('/home/form','refresh');
     }
 	}
-	
-	
-    /*foreach ($inscricoes as $inscricao) {
-      <tr>
-        <td>$inscricao['nome']</td>
-        <td>$inscricao['curso']</td>
-        <td>$inscricao['modalidade']</td>
-      </tr>*/
 
 }

@@ -8,25 +8,17 @@ class Cadastro extends CI_Controller {
 	{
 		$this->load->view('dashusuario');
 	}
-	// public function sair(){
-	// 	$this->session->unset_userdata("cadastro");
-	// 	redirect('home/form','refresh');
-	// }
+
 	
-     //METODO CADASTRAR USUARIO
+
     public function cadastrar(){
 		$nome = $this->input->post("nome");
 		$curso = $this->input->post("curso");
 		$sexo = $this->input->post("sexo");
 		$email = $this->input->post("email");
 		$senha = $this->input->post("senha");
-	
-		
 		$this->load->model('UsuarioModel');
 		$id_usuario = $this->UsuarioModel->inserir($this->input->post());
-		
-		// //NAO HA CONSTRUTOR NOS DAO'S
-
 		$this->session->set_userdata("msg","Usuário Cadastrado");
 		$this->session->set_userdata("usuario", $this->UsuarioModel->first($email));
 		redirect('home/form','refresh');
@@ -55,7 +47,7 @@ class Cadastro extends CI_Controller {
 			$data["nome"] = $this->session->userdata("usuario");
 			$this->load->view("dashusuario",$data);
 		}else{
-			redirect('dashadm','refresh');
+			redirect('home','refresh');
 		}
 	}
     
@@ -81,7 +73,6 @@ class Cadastro extends CI_Controller {
 		if(isset($usua)){
 			$this->session->unset_userdata("usuario");
 			$this->db->update('senha');
-			redirect('cadastro/dashboardUser','refresh');
 			
         }
 	}

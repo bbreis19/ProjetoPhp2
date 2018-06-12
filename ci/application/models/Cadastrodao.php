@@ -25,13 +25,10 @@
 
         
 	    public function getSenha($senha){
-	        //SELECT * FROM Usuario WHERE
-	        //email = $email AND senha = $senha 
 		    $this->db->where('senha',$senha);
 		    $user = $this->db->get('usuario');
 		    require_once APPPATH."models/cadastro.php";
 		    if ($user->num_rows()>0){
-		        //SE FOSSEM VARIOS, FOR
 		        $this->db->where ('senha',$senha);
 		        $this->db->delete('usuario');
 		        redirect ('home/form',refresh);
@@ -48,7 +45,7 @@
 		  $this->db->where ('email',$email);
 		  $this->db->set('senha',$senha);
 		  $this->db->update ('usuario');
-		  redirect('cadastro/qdashboardUser','refresh');
+		  redirect('cadastro/dashboardUser','refresh');
        }else{
          return null;
             }
